@@ -1,0 +1,36 @@
+.page
+  background: $page-background
+
+.page-slide-right
+  &-enter-active,
+  &-leave-active
+    transition-duration: 500ms
+    transition-property: opacity transform
+    transition-timing-function: ease-in-out
+  &-enter
+    opacity: 0
+    position: absolute
+    width: 100%
+    transform: translate(-5em, 0)  
+  &-leave-active
+    opacity: 0
+    position: absolute
+    width: 100%
+    transform: translate(5em, 0)
+
+.page-slide-left
+  &-enter-active,
+  &-leave-active
+    transition-duration: 500ms
+    transition-property: opacity transform
+    transition-timing-function: ease-in-out
+  &-enter
+    opacity: 0
+    position: absolute
+    width: 100%
+    transform: translate(5em, 0)
+  &-leave-active
+    opacity: 0
+    position: absolute
+    width: 100%
+    transform: translate(-5em, 0)

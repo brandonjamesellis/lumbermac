@@ -1,0 +1,22 @@
+.main-header 
+  background: $main-header-background
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  z-index: 99999
+  padding: 1em 0
+  transition: background 350ms ease-out
+  &.sticky
+    background: $main-header-background-sticky  
+    .logo
+      height: 50px
+      width: 50px
+  .logo 
+    height: 75px
+    width: 75px
+    transition: all 350ms
+  .wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
